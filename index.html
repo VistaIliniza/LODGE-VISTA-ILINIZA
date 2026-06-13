@@ -3,126 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva - Vista Iliniza Lodge</title>
-    
+    <meta name="description" content="Toacazo - Latacunga">
+    <title>Vista Iliniza Lodge - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="booking-container">
+    <main class="mobile-container">
         
-        <aside class="brand-panel">
-            <div class="brand-header">
-                <h1>VISTA ILINIZA LODGE</h1>
-                <h2>TOACAZO-LATACUNGA</h2>
-            </div>
+        <header class="header-banner">
+            <img src="img/banner.jpg" alt="Paisaje Iliniza" class="banner-img">
+            <button class="share-btn" aria-label="Compartir">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+            </button>
+        </header>
+
+        <section class="content-area">
             
-            <div class="brand-features">
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
-                    <span>Naturaleza</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-bed"></i></div>
-                    <span>Alojamiento</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-fire"></i></div>
-                    <span>Fogata</span>
-                </div>
+            <div class="profile-container">
+                <img src="https://storage.googleapis.com/bitly-image-upload/Iq622M7Se8t" alt="Logo Vista Iliniza" class="profile-logo">
             </div>
 
-            <div class="brand-social">
-                <a href="https://www.facebook.com/people/Vista-Iliniza-Lodge/100054441281494/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/vista_iliniza?fbclid=IwY2xjawSMKfVleHRuA2FlbQIxMABicmlkETAxeU1QMGlCanB1SFpwSmI4c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHqnUXMonNtAa1Lvt8oALJbV_gtnU76u88blCqhF7FOzVQEFCmtQCIWO4SfxQ_aem_agwMUrItxMghhRikoNd1kw" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@vista.iliniza.lodge" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-        </aside>
-
-        <section class="form-panel">
-            <div class="form-title">
-                <h2>Solicitud de Reserva</h2>
-                <span class="subtitle">Completa tus datos para vivir la experiencia</span>
+            <div class="text-info">
+                <h1 class="title">Vista Iliniza Lodge</h1>
+                <p class="subtitle">Toacazo - Latacunga</p>
             </div>
 
-            <form id="reservaForm" class="reserva-form">
+            <div class="links-container">
                 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="nombres">Nombres completos</label>
-                        <div class="input-wrapper">
-                            <i class="fa-regular fa-user"></i>
-                            <input type="text" id="nombres" name="nombres" placeholder="Ej. Juan Pérez" required>
+                <div class="card-wrapper">
+                    <a href="https://sites.google.com/view/vista-iliniza-lodge/inicio" target="_blank" class="card-link">
+                        <div class="card">
+                            <img src="img/tarjeta1.jpg" alt="Sitio Web" class="card-img">
+                            <div class="link-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-group">
-                        <label for="cedula">Número de cédula</label>
-                        <div class="input-wrapper">
-                            <i class="fa-regular fa-id-card"></i>
-                            <input type="text" id="cedula" name="cedula" placeholder="10 dígitos" required>
-                        </div>
-                    </div>
+                    </a>
+                    <p class="card-label">Sitio Web</p>
                 </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="correo">Correo electrónico</label>
-                        <div class="input-wrapper">
-                            <i class="fa-regular fa-envelope"></i>
-                            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                <div class="card-wrapper">
+                    <a href="https://www.airbnb.mx/rooms/1029964055796037220?unique_share_id=ef0588d7-3d60-47fb-a3a5-9566986e9aa6&viralityEntryPoint=1&s=76&source_impression_id=p3_1780496957_P3k6BIrmZNIqkwKT" target="_blank" class="card-link">
+                        <div class="card">
+                            <img src="img/tarjeta2.jpg" alt="Airbnb" class="card-img">
+                            <div class="link-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-group">
-                        <label for="celular">Número celular</label>
-                        <div class="input-wrapper">
-                            <i class="fa-solid fa-phone"></i>
-                            <input type="text" id="celular" name="celular" placeholder="0990000000" required>
-                        </div>
-                    </div>
+                    </a>
+                    <p class="card-label">Airbnb</p>
                 </div>
 
-                <div class="input-group full-width">
-                    <label for="cabana">Cabaña asignada</label>
-                    <div class="input-wrapper select-wrapper">
-                        <i class="fa-solid fa-house-chimney-window"></i>
-                        <select id="cabana" name="cabana" required>
-                            <option value="" disabled selected>Selecciona tu cabaña ideal</option>
-                            <option value="Vista Iliniza">Vista Iliniza</option>
-                            <option value="Vista Cielo">Vista Cielo</option>
-                            <option value="Vista Cotopaxi">Vista Cotopaxi</option>
-                        </select>
-                        <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-                    </div>
+                <a href="https://wa.me/593999366565" target="_blank" class="reserve-btn">¡Reserva Ahora!</a>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Vista-Iliniza-Lodge/100054441281494/" target="_blank" class="social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.988h-2.54v-2.89h2.54V9.798c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.129 22 16.99 22 12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@vista.iliniza.lodge" target="_blank" class="social-link" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.12-3.44-3.17-3.8-5.46-.4-2.51.35-5.2 2.1-7.1 1.62-1.81 4.1-2.9 6.55-2.82v4.01c-1.33-.06-2.67.24-3.79.94-1.25.81-2.08 2.21-2.23 3.68-.2 2.06.87 4.11 2.72 5.06 1.53.81 3.42.74 4.88-.23 1.15-.76 1.83-2.07 1.88-3.44.08-3.95.03-7.91.03-11.87v-.65z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/vista_iliniza?fbclid=IwY2xjawSMKfVleHRuA2FlbQIxMABicmlkETAxeU1QMGlCanB1SFpwSmI4c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHqnUXMonNtAa1Lvt8oALJbV_gtnU76u88blCqhF7FOzVQEFCmtQCIWO4SfxQ_aem_agwMUrItxMghhRikoNd1kw" target="_blank" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="ingreso">Fecha de ingreso</label>
-                        <div class="input-wrapper">
-                            <input type="date" id="ingreso" name="ingreso" required>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label for="salida">Fecha de salida</label>
-                        <div class="input-wrapper">
-                            <input type="date" id="salida" name="salida" required>
-                        </div>
-                    </div>
-                </div>
-
-                <button type="submit" id="submitBtn" class="btn-submit">
-                    <span>Confirmar Reserva</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-                <p id="statusMessage" class="status-message"></p>
-            </form>
+            </div>
         </section>
-        
     </main>
 
     <script src="script.js"></script>
